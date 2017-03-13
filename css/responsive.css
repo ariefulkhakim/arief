@@ -106,4 +106,9 @@
 	    position: relative;
 	    padding-top: 15px;
 	}
+
+	.contact-form {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
 }
