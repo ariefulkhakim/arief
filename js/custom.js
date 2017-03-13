@@ -20,6 +20,15 @@ Author     : Arieful Khakim
 	        
 	    });
 
+	    // Smooth Scroll
+		$('a.smooth-scroll').on("click", function (e) {
+			e.preventDefault();
+			var anchor = $(this);
+			$('html, body').stop().animate({
+			  scrollTop: $(anchor.attr('href')).offset().top - 50
+			}, 1000);
+	    });
+
 	    // Owl-Carousel
 	    $('.owl-carousel').owlCarousel({
 		    loop:true,
@@ -56,5 +65,42 @@ Author     : Arieful Khakim
 		  	}
 		});
 
+		// Contact-Form
+		$('#contact-form').on('submit', function(e) {
+			var form = $(this),
+				formdata = $(this).serialize(),
+				chack = $('#form-chack');
+
+			function reset_form(){
+				$("#name").val('');
+				$("#email").val('');
+				$("#message").val('');
+			} 
+
+			$.ajax({
+				url:  $(form).attr('action'),
+				type: 'POST',
+				data: formdata,
+				success : function(text){
+					if (text == "success"){
+						$('#form-chack').fadeIn(400);
+						reset_form();
+						chack.text("Your message has been sent :)");
+						chack.removeClass('error');
+						chack.addClass('send');
+						$('#form-chack').fadeOut(8000);
+					} 
+					else {
+						$('#form-chack').fadeIn(400);
+						reset_form();
+						chack.text("Oops! something wrong.");
+						chack.removeClass('send');
+						chack.addClass('error');
+						$('#form-chack').fadeOut(8000);
+					}
+				}
+			});
+			e.preventDefault();
+		});	
 	});
 })(jQuery);

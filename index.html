@@ -53,12 +53,12 @@
 		<!-- Collect the nav links, forms, and other content for toggling -->
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 			<ul class="nav navbar-nav navbar-right">
-				<li class="active"><a href="#home">Home</a></li>
-				<li><a href="#services">Services</a></li>
-				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#">Testimonials</a></li>
-				<li><a href="#">Blog</a></li>
-				<li><a href="#">Contact</a></li>
+				<li class="active"><a class="smooth-scroll" href="#home">Home</a></li>
+				<li><a class="smooth-scroll" href="#services">Services</a></li>
+				<li><a class="smooth-scroll" href="#portfolio">Portfolio</a></li>
+				<li><a class="smooth-scroll" href="#testimonials">Testimonials</a></li>
+				<li><a class="smooth-scroll" href="#blog">Blog</a></li>
+				<li><a class="smooth-scroll" href="#contact">Contact</a></li>
 			</ul>
 		</div><!-- /.navbar-collapse -->
 	</div><!-- /.container-fluid -->
@@ -522,6 +522,137 @@
 		</div>
 	</div>
 </div>
+<!-- TESTIMONIALS END -->
+
+<!-- BLOG -->
+<div id="blog" class="blog bg-white">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title text-center">
+					<h1><span>My</span> Blog</h1>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="blog-top">	
+				<div class="col-md-6 col-sm-6">
+					<div class="blog-content">
+						<a href="single-blog.html" class="blog-img">
+							<img src="images/blog.jpeg" alt="">
+						</a>
+						<ul class="blog-list">
+							<li><i class="fa fa-calendar-minus-o"></i> 24 Mar 1998</li>
+							<li><i class="fa fa-user"></i> Arieful Khakim</li>
+							<li><i class="fa fa-tag"></i> Category</li>
+						</ul>
+						<div class="blog-text">
+							<a href="#" class="title-blog">The best of the design blog and modern layout</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<a href="#" class="btn btn-blog">Read More</a>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-6 col-sm-6">
+					<div class="blog-content">
+						<a href="single-blog.html" class="blog-img">
+							<img src="images/blog1.jpeg" alt="">
+						</a>
+						<ul class="blog-list">
+							<li><i class="fa fa-calendar-minus-o"></i> 24 Mar 1998</li>
+							<li><i class="fa fa-user"></i> Arieful Khakim</li>
+							<li><i class="fa fa-tag"></i> Category</li>
+						</ul>
+						<div class="blog-text">
+							<a href="#" class="title-blog">The best of the design blog and modern layout</a>
+							<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat.</p>
+							<a href="#" class="btn btn-blog">Read More</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- BLOG END -->
+
+<!-- CONTACT -->
+<div id="contact" class="contact bg-grey">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="title text-center">
+					<h1>Contact <span>Me</span></h1>
+				</div>
+			</div>
+			<div class="col-md-8 col-md-offset-2">
+				<div class="contact-form">
+					<div class="row">
+						<form id="contact-form" method="POST" action="contact.php">
+						<div id="form-chack"></div>
+							<div class="col-md-6 col-sm-6">
+								<input type="text" id="name" class="form-control" placeholder="Your Name" required data-error="Please enter your name">
+							</div>
+							<div class="col-md-6 col-sm-6">
+								<input type="email" id="email" class="email form-control" placeholder="Your Email" required data-error="Please enter your email">
+							</div>
+							<div class="col-md-12 col-sm-12">
+								<textarea id="message" rows="7" placeholder="Your Message" class="form-control" required data-error="Write your message"></textarea>
+							</div>
+							<div class="col-md-12 col-sm-12 text-center">
+								<button type="submit" id="submit" class="contact-btn">Send Message</button>
+							</div>
+						</form>	
+						<div class="row contact-bottom">
+							<div class="col-sm-4 contact-info">
+								<div class="contact-img">
+									<img src="images/linea/basic_mail.png">
+									<p>domain@gmail.com<br>domain@gmail.com</p>
+								</div>
+							</div>
+							<div class="col-sm-4 contact-info">
+								<div class="contact-img">
+									<img src="images/linea/basic_geolocalize-05.png">
+									<p>2045A, Production Of Graphich studio , kajen indonesia</p>
+								</div>
+							</div>
+							<div class="col-sm-4 contact-info">
+								<div class="contact-img">
+									<img src="images/linea/basic_smartphone.png">
+									<p>+62901481480<br>+629104719</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- CONTACT END -->
+<footer id="footer" class="footer">
+	<div id="map"></div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="footer-bottom">
+				<ul>
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+				</ul>
+				<div class="copyright">
+					<p>Copyright © 2017 Arief. All right Reserved.</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<!-- Include all compiled plugins (below), or include individual files as needed -->
@@ -530,11 +661,17 @@
 	<script src="js/magnific-popup.min.js"></script>
 	<!-- Owl-Carousel -->
 	<script src="js/owl.carousel.min.js"></script>
+	<!-- Form-Validator -->
+	<script src="js/form-validator.min.js"></script>
 	<!-- Mixitup -->
 	<script src="js/mixitup.js"></script>
 	<!-- Progress Bar -->
 	<script src="js/progress.bar.js"></script>
 	<!-- Main -->
 	<script src="js/custom.js"></script>
+	<!-- Google-Map -->
+	<script src="js/google-map.js"></script>
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAz3LNT0XL1jsxmc24dZBikmc3zQdVPIh4&callback=initMap"></script>
+
 </body>
 </html>

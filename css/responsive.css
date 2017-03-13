@@ -88,4 +88,22 @@
 	.services-item p {
 		padding: 0px;
 	}
+
+	.blog-content {
+		padding-bottom: 30px;
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+
+	.blog-list li {
+	    display: inline-block;
+	    margin-top: 12px;
+	    margin-bottom: 0px;
+	    padding-right: 7px;
+	}
+
+	.blog-text {
+	    position: relative;
+	    padding-top: 15px;
+	}
 }
