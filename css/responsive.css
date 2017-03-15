@@ -33,6 +33,10 @@
 	.services-single-right {
 		margin-right: 0px;
 	}
+
+	.categories-content {
+		width: 280px;
+	}
 }
 
 @media only screen and (max-width: 320px) {
@@ -107,8 +111,50 @@
 	    padding-top: 15px;
 	}
 
+	.blog-wrap {
+	    position: relative;
+	    padding: 80px 5px;
+	}
+
+	.btn-single {
+		margin-bottom: 10px;
+	}
+
 	.contact-form {
 		padding-left: 10px;
 		padding-right: 10px;
+	}
+
+	.categories-content {
+		width: 250px;
+	}
+
+	.sidebar-widget {
+	    float: left;
+	    padding: 30px 10px 0px 10px;
+	}
+
+	.post-img > img {
+	    filter: grayscale(5%);
+	    width: 100px;
+	    height: 100px;
+	}
+
+	.post-detail h5 {
+	    color: #111;
+	    font-size: 13px;
+	    text-transform: uppercase;
+	    margin-bottom: 5px;
+	    line-height: 20px;
+	}
+
+	.icon-widget {
+		position: relative;
+		padding: 30px 10px 0px 10px;
+	}
+
+	.social-icon ul li {
+	    display: inline-block;
+	    padding-right: 24px;
 	}
 }
